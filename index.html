@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Guitar Notes</title>
+</head>
+<body>
+    <h1>Interactive Guitar Fretboard</h1>
+    <div id="fretboard">
+        <div id="fret-labels" class="string">
+            <div class="fret number"></div>
+            <div class="fret label">open</div>
+            <div class="fret label">1</div>
+            <div class="fret label">2</div>
+            <div class="fret label">3</div>
+            <div class="fret label">4</div>
+            <div class="fret label">5</div>
+            <div class="fret label">6</div>
+            <div class="fret label">7</div>
+            <div class="fret label">8</div>
+            <div class="fret label">9</div>
+            <div class="fret label">10</div>
+            <div class="fret label">11</div>
+            <div class="fret label">12</div>
+            <div class="fret label">13</div>
+            <div class="fret label">14</div>
+            <div class="fret label">15</div>
+            <div class="fret label">16</div>
+            <div class="fret label">17</div>
+        </div>
+        <div id="one-string" class="string">
+            <div class="fret number">1</div>
+            <div class="fret open e">E</div>
+            <div class="fret one f">F</div>
+            <div class="fret two fsharp">F&#35;</div>
+            <div class="fret three g">G</div>
+            <div class="fret four gsharp">G&#35;</div>
+            <div class="fret five a">A</div>
+            <div class="fret six asharp">A&#35;</div>
+            <div class="fret seven b">B</div>
+            <div class="fret eight c">C</div>
+            <div class="fret nine csharp">C&#35;</div>
+            <div class="fret ten d">D</div>
+            <div class="fret eleven dsharp">D&#35;</div>
+            <div class="fret twelve e">E</div>
+            <div class="fret thirteen f">F</div>
+            <div class="fret fourteen fsharp">F&#35;</div>
+            <div class="fret fifteen g">G</div>
+            <div class="fret sixteen gsharp">G&#35;</div>
+            <div class="fret seventeen a">A</div>
+        </div>
+        <div id="two-string" class="string">
+            <div class="fret number">2</div>
+            <div class="fret open b">B</div>
+            <div class="fret one c">C</div>
+            <div class="fret two csharp">C&#35;</div>
+            <div class="fret three d">D</div>
+            <div class="fret four dsharp">D&#35;</div>
+            <div class="fret five e">E</div>
+            <div class="fret six f">F</div>
+            <div class="fret seven fsharp">F&#35;</div>
+            <div class="fret eight g">G</div>
+            <div class="fret nine gsharp">G&#35;</div>
+            <div class="fret ten a">A</div>
+            <div class="fret eleven asharp">A&#35;</div>
+            <div class="fret twelve b">B</div>
+            <div class="fret thirteen c">C</div>
+            <div class="fret fourteen csharp">C&#35;</div>
+            <div class="fret fifteen d">D</div>
+            <div class="fret sixteen dsharp">D&#35;</div>
+            <div class="fret seventeen e">E</div>
+        </div>
+
+        <div id="three-string" class="string">
+            <div class="fret number">3</div>
+            <div class="fret open G">G</div>
+            <div class="fret one gsharp">G&#35;</div>
+            <div class="fret two a">A</div>
+            <div class="fret three asharp">A&#35;</div>
+            <div class="fret four b">B</div>
+            <div class="fret five c">C</div>
+            <div class="fret six csharp">C&#35;</div>
+            <div class="fret seven d">D</div>
+            <div class="fret eight dsharp">D&#35;</div>
+            <div class="fret nine e">E</div>
+            <div class="fret ten f">F</div>
+            <div class="fret eleven fsharp">F&#35;</div>
+            <div class="fret twelve g">G</div>
+            <div class="fret thirteen gsharp">G&#35;</div>
+            <div class="fret fourteen a">A</div>
+            <div class="fret fifteen asharp">A&#35;</div>
+            <div class="fret sixteen b">B</div>
+            <div class="fret seventeen c">C</div>
+        </div>
+        <div id="four-string" class="string">
+            <div class="fret number">4</div>
+            <div class="fret open d">D</div>
+            <div class="fret one dsharp">D&#35;</div>
+            <div class="fret two e">E</div>
+            <div class="fret three f">F</div>
+            <div class="fret four fsharp">F&#35;</div>
+            <div class="fret five g">G</div>
+            <div class="fret six gsharp">G&#35;</div>
+            <div class="fret seven a">A</div>
+            <div class="fret eight asharp">A&#35;</div>
+            <div class="fret nine b">B</div>
+            <div class="fret ten c">C</div>
+            <div class="fret eleven csharp">C&#35;</div>
+            <div class="fret twelve d">D</div>
+            <div class="fret thirteen dsharp">D&#35;</div>
+            <div class="fret fourteen e">E</div>
+            <div class="fret fifteen f">F</div>
+            <div class="fret sixteen fsharp">F&#35;</div>
+            <div class="fret seventeen g">G</div>
+        </div>
+        <div id="five-string" class="string">
+            <div class="fret number">5</div>
+            <div class="fret open a">A</div>
+            <div class="fret one asharp">A&#35;</div>
+            <div class="fret two b">B</div>
+            <div class="fret three c">C</div>
+            <div class="fret four csharp">C&#35;</div>
+            <div class="fret five d">D</div>
+            <div class="fret six dsharp">D&#35;</div>
+            <div class="fret seven e">E</div>
+            <div class="fret eight f">F</div>
+            <div class="fret nine fsharp">F&#35;</div>
+            <div class="fret ten g">G</div>
+            <div class="fret eleven gsharp">G&#35;</div>
+            <div class="fret twelve a">A</div>
+            <div class="fret thirteen asharp">A&#35;</div>
+            <div class="fret fourteen b">B</div>
+            <div class="fret fifteen c">C</div>
+            <div class="fret sixteen csharp">C&#35;</div>
+            <div class="fret seventeen d">D</div>
+        </div>
+        <div id="six-string" class="string">
+            <div class="fret number">6</div>
+            <div class="fret open e">E</div>
+            <div class="fret one f">F</div>
+            <div class="fret two fsharp">F&#35;</div>
+            <div class="fret three g">G</div>
+            <div class="fret four gsharp">G&#35;</div>
+            <div class="fret five a">A</div>
+            <div class="fret six asharp">A&#35;</div>
+            <div class="fret seven b">B</div>
+            <div class="fret eight c">C</div>
+            <div class="fret nine csharp">C&#35;</div>
+            <div class="fret ten d">D</div>
+            <div class="fret eleven dsharp">D&#35;</div>
+            <div class="fret twelve e">E</div>
+            <div class="fret thirteen f">F</div>
+            <div class="fret fourteen fsharp">F&#35;</div>
+            <div class="fret fifteen g">G</div>
+            <div class="fret sixteen gsharp">G&#35;</div>
+            <div class="fret seventeen a">A</div>
+        </div>
+    </div>
+</body>
+</html>
