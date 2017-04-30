@@ -36,3 +36,7 @@ body {
 .one {
     border-left: 3px solid black;
 }
+
+.selected {
+    background-color: rgba(165, 165, 255, 1);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Guitar Notes</title>
 </head>
 <body>
@@ -33,24 +33,24 @@
         </div>
         <div id="one-string" class="string">
             <div class="fret number">1</div>
-            <div class="fret open e">E</div>
+            <div class="fret open e pos4">E</div>
             <div class="fret one f">F</div>
             <div class="fret two fsharp">F&#35;</div>
-            <div class="fret three g">G</div>
+            <div class="fret three g pos4 pos5">G</div>
             <div class="fret four gsharp">G&#35;</div>
-            <div class="fret five a">A</div>
+            <div class="fret five a pos1 pos5">A</div>
             <div class="fret six asharp">A&#35;</div>
             <div class="fret seven b">B</div>
-            <div class="fret eight c">C</div>
+            <div class="fret eight c pos1 pos2">C</div>
             <div class="fret nine csharp">C&#35;</div>
-            <div class="fret ten d">D</div>
+            <div class="fret ten d pos2 pos3">D</div>
             <div class="fret eleven dsharp">D&#35;</div>
-            <div class="fret twelve e">E</div>
+            <div class="fret twelve e pos3 pos4">E</div>
             <div class="fret thirteen f">F</div>
             <div class="fret fourteen fsharp">F&#35;</div>
-            <div class="fret fifteen g">G</div>
+            <div class="fret fifteen g pos4 pos5">G</div>
             <div class="fret sixteen gsharp">G&#35;</div>
-            <div class="fret seventeen a">A</div>
+            <div class="fret seventeen a pos5">A</div>
         </div>
         <div id="two-string" class="string">
             <div class="fret number">2</div>
@@ -59,19 +59,19 @@
             <div class="fret two csharp">C&#35;</div>
             <div class="fret three d">D</div>
             <div class="fret four dsharp">D&#35;</div>
-            <div class="fret five e">E</div>
+            <div class="fret five e pos1">E</div>
             <div class="fret six f">F</div>
             <div class="fret seven fsharp">F&#35;</div>
-            <div class="fret eight g">G</div>
+            <div class="fret eight g pos1 pos2">G</div>
             <div class="fret nine gsharp">G&#35;</div>
-            <div class="fret ten a">A</div>
+            <div class="fret ten a pos2 pos3">A</div>
             <div class="fret eleven asharp">A&#35;</div>
             <div class="fret twelve b">B</div>
-            <div class="fret thirteen c">C</div>
+            <div class="fret thirteen c pos3 pos4">C</div>
             <div class="fret fourteen csharp">C&#35;</div>
-            <div class="fret fifteen d">D</div>
+            <div class="fret fifteen d pos4 pos5">D</div>
             <div class="fret sixteen dsharp">D&#35;</div>
-            <div class="fret seventeen e">E</div>
+            <div class="fret seventeen e pos5">E</div>
         </div>
 
         <div id="three-string" class="string">
@@ -81,9 +81,9 @@
             <div class="fret two a">A</div>
             <div class="fret three asharp">A&#35;</div>
             <div class="fret four b">B</div>
-            <div class="fret five c">C</div>
+            <div class="fret five c pos1">C</div>
             <div class="fret six csharp">C&#35;</div>
-            <div class="fret seven d">D</div>
+            <div class="fret seven d pos1">D</div>
             <div class="fret eight dsharp">D&#35;</div>
             <div class="fret nine e">E</div>
             <div class="fret ten f">F</div>
@@ -102,9 +102,9 @@
             <div class="fret two e">E</div>
             <div class="fret three f">F</div>
             <div class="fret four fsharp">F&#35;</div>
-            <div class="fret five g">G</div>
+            <div class="fret five g pos1">G</div>
             <div class="fret six gsharp">G&#35;</div>
-            <div class="fret seven a">A</div>
+            <div class="fret seven a pos1">A</div>
             <div class="fret eight asharp">A&#35;</div>
             <div class="fret nine b">B</div>
             <div class="fret ten c">C</div>
@@ -123,9 +123,9 @@
             <div class="fret two b">B</div>
             <div class="fret three c">C</div>
             <div class="fret four csharp">C&#35;</div>
-            <div class="fret five d">D</div>
+            <div class="fret five d pos1">D</div>
             <div class="fret six dsharp">D&#35;</div>
-            <div class="fret seven e">E</div>
+            <div class="fret seven e pos1">E</div>
             <div class="fret eight f">F</div>
             <div class="fret nine fsharp">F&#35;</div>
             <div class="fret ten g">G</div>
@@ -144,10 +144,10 @@
             <div class="fret two fsharp">F&#35;</div>
             <div class="fret three g">G</div>
             <div class="fret four gsharp">G&#35;</div>
-            <div class="fret five a">A</div>
+            <div class="fret five a pos1">A</div>
             <div class="fret six asharp">A&#35;</div>
             <div class="fret seven b">B</div>
-            <div class="fret eight c">C</div>
+            <div class="fret eight c pos1">C</div>
             <div class="fret nine csharp">C&#35;</div>
             <div class="fret ten d">D</div>
             <div class="fret eleven dsharp">D&#35;</div>
@@ -159,5 +159,24 @@
             <div class="fret seventeen a">A</div>
         </div>
     </div>
+    <div id="controls">
+        <select name="positions" id="position-select">
+            <option value="one">None</option>
+            <option value="one">I</option>
+            <option value="two">II</option>
+            <option value="three">III</option>
+            <option value="four">IV</option>
+            <option value="five">V</option>
+        </select>
+    </div>
+
+    <!-- load CDN first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!--  if CDN fails, load local jQuery file -->
+
+    <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>');</script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
