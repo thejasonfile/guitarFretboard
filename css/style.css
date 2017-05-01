@@ -56,6 +56,11 @@
     background-color: rgba(165, 165, 255, 1);
 }
 
+.root-note {
+    background-color: rgba(242, 36, 36, 1);
+    color: white;
+}
+
 select {
     font-size: 1.2em;
 }

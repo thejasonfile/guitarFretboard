@@ -74,6 +74,7 @@ $(() => {
 
         var removeHighlights = () => {
             allFrets.removeClass('selected');
+            allFrets.removeClass('root-note')
         }
 
         var highlightFrets = (position) => {
@@ -82,6 +83,15 @@ $(() => {
                 position['frets'].forEach((fret) => {
                     allFrets[rootNote+fret].className += (' selected');
                 })
+            })
+            highlightRootNotes();
+        }
+
+        var highlightRootNotes = () => {
+            $('.selected').each((div) => {
+                if($($('.selected')[div]).hasClass(selectedScale)){
+                    $($('.selected')[div]).addClass('root-note')
+                }
             })
         }
 
