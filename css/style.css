@@ -9,11 +9,18 @@ body {
     font-size: 0;
 }
 
+#controls {
+    display: flex;
+    flex-direction: row;
+}
+
 .string {
     display: flex;
 }
 
-.fret {
+.fret,
+.label,
+.number {
     display: flex;
     justify-content: center;
     align-items: center;
