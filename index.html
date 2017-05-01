@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Guitar Notes</title>
 </head>
-<body>
+<body class="flex flex-column flex-align-center flex-justify-center">
     <h1>Interactive Guitar Fretboard</h1>
     <div id="fretboard">
-        <div id="fret-labels" class="string">
+        <div id="fret-labels" class="string flex">
             <div class="number"></div>
             <div class="label">open</div>
             <div class="label">1</div>
@@ -31,7 +31,7 @@
             <div class="label">16</div>
             <div class="label">17</div>
         </div>
-        <div id="one-string" class="string">
+        <div id="one-string" class="string flex">
             <div class="number">1</div>
             <div class="fret open e">E</div>
             <div class="fret one f">F</div>
@@ -52,7 +52,7 @@
             <div class="fret sixteen gsharp">G&#35;</div>
             <div class="fret seventeen a">A</div>
         </div>
-        <div id="two-string" class="string">
+        <div id="two-string" class="string flex">
             <div class="number">2</div>
             <div class="fret open b">B</div>
             <div class="fret one c">C</div>
@@ -74,7 +74,7 @@
             <div class="fret seventeen e">E</div>
         </div>
 
-        <div id="three-string" class="string">
+        <div id="three-string" class="string flex">
             <div class="number">3</div>
             <div class="fret open G">G</div>
             <div class="fret one gsharp">G&#35;</div>
@@ -95,7 +95,7 @@
             <div class="fret sixteen b">B</div>
             <div class="fret seventeen c">C</div>
         </div>
-        <div id="four-string" class="string">
+        <div id="four-string" class="string flex">
             <div class="number">4</div>
             <div class="fret open d">D</div>
             <div class="fret one dsharp">D&#35;</div>
@@ -116,7 +116,7 @@
             <div class="fret sixteen fsharp">F&#35;</div>
             <div class="fret seventeen g">G</div>
         </div>
-        <div id="five-string" class="string">
+        <div id="five-string" class="string flex">
             <div class="number">5</div>
             <div class="fret open a">A</div>
             <div class="fret one asharp">A&#35;</div>
@@ -137,7 +137,7 @@
             <div class="fret sixteen csharp">C&#35;</div>
             <div class="fret seventeen d">D</div>
         </div>
-        <div id="six-string" class="string">
+        <div id="six-string" class="string flex">
             <div class="number">6</div>
             <div class="fret open e">E</div>
             <div class="fret one f">F</div>
@@ -159,9 +159,9 @@
             <div class="fret seventeen a">A</div>
         </div>
     </div>
-    <div id="controls">
+    <div id="controls" class="flex flex-row flex-justify-center">
         <div id="scales">
-        <h4>Scale</h4>
+        <h3>Scale</h3>
         <select name="scales" id="scale-select">
             <option value="a">A</option>
             <option value="b">B</option>
@@ -173,14 +173,14 @@
         </select>
         </div>
         <div id="keys">
-            <h4>Key</h4>
+            <h3>Major/Minor</h3>
             <select name="keys" id="key-select">
                 <option value="minor">Minor</option>
                 <option value="major">Major</option>
             </select>
         </div>
         <div id="positions">
-        <h4>Position</h4>
+        <h3>Position</h3>
         <select name="positions" id="position-select">
             <option value="none">None</option>
             <option value="one">I</option>
@@ -188,8 +188,15 @@
             <option value="three">III</option>
             <option value="four">IV</option>
             <option value="five">V</option>
+            <option value="all">All</option>
         </select>
+        </div>
     </div>
+    <div id="note-section" class="flex flex-column flex-align-center">
+        <h3>Notes</h3>
+        <div id="notes" class="flex flex-row">
+
+        </div>
     </div>
 
     <!-- load CDN first -->

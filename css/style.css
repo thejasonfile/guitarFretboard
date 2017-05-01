@@ -1,21 +1,29 @@
-body {
+.flex {
     display: flex;
+}
+
+.flex-row {
+    flex-direction: row
+}
+
+.flex-column {
     flex-direction: column;
+}
+
+.flex-align-center {
     align-items: center;
+}
+
+.flex-justify-center {
     justify-content: center;
 }
 
-#fretboard {
-    font-size: 0;
-}
-
 #controls {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
 }
 
-.string {
-    display: flex;
+#controls div {
+    margin: 0 5%;
 }
 
 .fret,
@@ -46,4 +54,18 @@ body {
 
 .selected {
     background-color: rgba(165, 165, 255, 1);
+}
+
+select {
+    font-size: 1.2em;
+}
+
+#notes,
+#note-section {
+    width: 50%;
+}
+
+#notes {
+    font-size: 1.4em;
+    justify-content: space-around;
 }
