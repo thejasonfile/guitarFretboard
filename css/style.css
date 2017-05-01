@@ -18,6 +18,20 @@
     justify-content: center;
 }
 
+.fret {
+    position: relative;
+    color: rgba(127, 127, 127, 0.4);
+}
+
+.fa-circle {
+    position: absolute;
+    font-size: 1.6em;
+    left: 20px;
+    bottom: 1px;
+    z-index: 0;
+    color: rgba(127, 127, 127, 0.3);
+}
+
 #controls {
     width: 100%;
 }
@@ -54,6 +68,7 @@
 
 .selected {
     background-color: rgba(165, 165, 255, 1);
+    color: black;
 }
 
 .root-note {
