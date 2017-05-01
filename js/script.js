@@ -121,12 +121,6 @@ $(() => {
             case 'five':
                 highlightFrets(positionFive);
                 break;
-            case 'all':
-                highlightFrets(positionOne);
-                highlightFrets(positionTwo);
-                highlightFrets(positionThree);
-                highlightFrets(positionFour);
-                highlightFrets(positionFive);
         }
     })
 
