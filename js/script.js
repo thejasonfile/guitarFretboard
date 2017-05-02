@@ -55,12 +55,12 @@ var positionFive = {
 
 var notes = {
     'aminor' : ['A', 'C', 'D', 'E', 'G', 'A'],
-    'bminor' : ['B', 'D', 'E', 'F&#35;', 'A', 'B'],
-    'cminor' : ['C', 'D&#35;', 'F', 'G', 'A&#35;', 'C'],
+    'bminor' : ['B', 'D', 'E', 'F#', 'A', 'B'],
+    'cminor' : ['C', 'D#', 'F', 'G', 'A#', 'C'],
     'dminor' : ['D', 'F', 'G', 'A', 'C', 'D'],
     'eminor' : ['E', 'G', 'A', 'B', 'D', 'E'],
-    'fminor' : ['F', 'G&#35;', 'A&#35;', 'C', 'D&#35;', 'F'],
-    'gminor' : ['G', 'A&#35;', 'C', 'D', 'F', 'G'],
+    'fminor' : ['F', 'G#', 'A#', 'C', 'D#', 'F'],
+    'gminor' : ['G', 'A#', 'C', 'D', 'F', 'G'],
 }
 
 $(() => {
@@ -102,6 +102,13 @@ $(() => {
             })
         }
 
+        var displayAllNotes = (key) => {
+            notes[key].forEach((note) => {
+                $(`.${note.toLowerCase().replace('#', 'sharp')}`).addClass('selected')
+            })
+            highlightRootNotes();
+        }
+
         removeHighlights();
         displayNotes();
 
@@ -121,6 +128,8 @@ $(() => {
             case 'five':
                 highlightFrets(positionFive);
                 break;
+            case 'all':
+                displayAllNotes(key);
         }
     })
 
